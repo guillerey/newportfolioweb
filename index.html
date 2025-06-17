@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Guillermo Reyes</h1>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                    <ul id="nav-links">
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre mí</h2>
+                <p>Autodidacta en desarrollo web con bases en HTML, CSS y experiencia usando Bootstrap en proyectos personales. Actualmente fortaleciendo conocimientos en JavaScript y herramientas de diseño como Figma.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+            <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto, tecnologías usadas y funcionalidades principales.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver código</a>
+                        <a href="#" target="_blank">Ver demo</a>
+                    </div>
+                    </article>
+                    <article class="project-card">
+            <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto, tecnologías usadas y funcionalidades principales.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Ver código</a>
+                        <a href="#" target="_blank">Ver demo</a>
+                    </div>
+                    </article>
+
+                </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme vía correo electrónico: <a href="mailto:guillerey.dev@outlook.com">guillerey.dev@outlook.com </a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025. Todos los derechos reservados.
+    </footer>
+
+<script>
+    // Toggle menú móvil
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
